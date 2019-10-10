@@ -1,0 +1,18 @@
+.main-title{
+    text-align: center;
+    color: cadetblue;
+    font-size: 25px;
+}
+.main-form{
+    padding: 2% 30%;
+}
+.all-main-container{
+    margin: 3% 30%;
+    border: 1px solid;
+    padding: 2%;
+    box-shadow: 10px 10px 8px #888888;
+    font-weight: bold;
+}
+.hello{
+    text-align: center;
+}
