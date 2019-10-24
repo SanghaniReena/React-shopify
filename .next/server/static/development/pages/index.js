@@ -121,64 +121,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ "./pages/style.css");
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-icons/fa */ "react-icons/fa");
+/* harmony import */ var react_icons_fa__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-// import {Button, Form, FormGroup, Label, Input } from "reactstrap";
-// import "bootstrap/dist/css/bootstrap.min.css";
-// import "./style.css"
-// const Index = () => (
-//     <div className="all-main-container">
-//         <Form>
-//                 <div className="main-title">Hi there!!</div>
-//                 <FormGroup>
-//                     <Label>Name</Label>
-//                     <Input type="Name" placeholder="Enetr your name.." />
-//                 </FormGroup>
-//                 <FormGroup>
-//                     <Label for="exampleSelect">Select Gender</Label>
-//                     <Input type="select" name="gender">
-//                         <option>Male</option>
-//                         <option>Female</option>
-//                         <option>Other</option>
-//                     </Input>
-//                 </FormGroup>
-//                 <Button color="primary">Submit</Button>
-//         </Form>
-//     </div>
-// );
-// export default Index;
 
 
 
- // const WpOption1 = require("../assets/Wa1.png");
-// const WpOption2 = require("../assets/wa2.jpg");
+
+
 
 const Index = () => {
+  const {
+    0: Submit,
+    1: setSubmit
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   return __jsx("div", {
     className: "all-main-container"
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Form"], null, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["FormGroup"], {
     tag: "fieldset"
-  }, __jsx("legend", null, "Select WhatsApp Share button"), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["FormGroup"], {
+  }, __jsx("legend", null, "Select WhatsApp Share button "), __jsx("div", {
+    style: {
+      display: "flex"
+    }
+  }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["FormGroup"], {
     check: true
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Label"], {
     check: true
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Input"], {
     type: "radio",
-    name: "radio1"
-  }), ' ', __jsx("i", {
-    class: "fa fa-whatsapp"
+    name: "radio1",
+    value: "option1"
+  }), ' ', __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__["FaWhatsapp"], {
+    color: "green",
+    size: "2em"
   }))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["FormGroup"], {
     check: true
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Label"], {
     check: true
   }, __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Input"], {
     type: "radio",
-    name: "radio1"
-  }), ' ', __jsx("img", {
-    height: "15px",
-    width: "15px",
-    src: "../assets/wa2.jpg",
-    alt: "ss"
-  })))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], null, "Submit")));
+    name: "radio1",
+    value: "option2"
+  }), ' ', __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__["FaWhatsappSquare"], {
+    color: "green",
+    size: "2em"
+  }))))), __jsx(reactstrap__WEBPACK_IMPORTED_MODULE_2__["Button"], null, "Submit")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -216,6 +203,17 @@ module.exports = __webpack_require__(/*! C:\Users\user\Desktop\r50\react-shopify
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-icons/fa":
+/*!*********************************!*\
+  !*** external "react-icons/fa" ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-icons/fa");
 
 /***/ }),
 
