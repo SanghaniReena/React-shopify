@@ -13,6 +13,8 @@
     box-shadow: 10px 10px 8px #888888;
     font-weight: bold;
 }
-.hello{
-    text-align: center;
+.enable-disable {
+    display: flex;
+    justify-content: space-between;
+    margin: 1% 30%;
 }
