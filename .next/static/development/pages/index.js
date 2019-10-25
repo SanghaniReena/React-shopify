@@ -33806,7 +33806,9 @@ function (_Component) {
     _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Configuration).call(this, props));
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleOnChange", function (e, key) {
-      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])({}, key, e.target.value));
+      _this.setState(Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])({}, key, e.target.value), function () {
+        return console.log("selected----", _this.state.buttonType);
+      });
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleSubmit", function () {
@@ -33846,7 +33848,7 @@ function (_Component) {
         onChange: function onChange(e) {
           return _this2.handleOnChange(e, "buttonType");
         },
-        checked: true
+        checked: this.state.buttonType === 'option1'
       }), ' ', __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_10__["FaWhatsapp"], {
         color: "green",
         size: "2.5em"
@@ -33860,7 +33862,8 @@ function (_Component) {
         value: "option2",
         onChange: function onChange(e) {
           return _this2.handleOnChange(e, "buttonType");
-        }
+        },
+        checked: this.state.buttonType === 'option2'
       }), ' ', __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_10__["FaWhatsappSquare"], {
         color: "green",
         size: "2.5em"

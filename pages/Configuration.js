@@ -15,7 +15,7 @@ class Configuration extends Component {
     handleOnChange = (e, key) => {
         this.setState({
             [key]: e.target.value
-        })
+        },()=>console.log("selected----",this.state.buttonType))
     }
     handleSubmit = () => {
         const { buttonType } = this.state;
@@ -32,13 +32,22 @@ class Configuration extends Component {
                             <div style={{ display: "flex" }}>
                                 <FormGroup check>
                                     <Label check>
-                                        <Input type="radio" name="radio1" value="option1" onChange={(e) => this.handleOnChange(e, "buttonType") } checked />{' '}
+                                        <Input 
+                                            type="radio" 
+                                            name="radio1" 
+                                            value="option1" 
+                                            onChange={(e) => this.handleOnChange(e, "buttonType") }
+                                            checked={this.state.buttonType === 'option1'} />{' '}
                                         <FaWhatsapp color="green" size="2.5em" />
                                     </Label>
                                 </FormGroup>
                                 <FormGroup check>
                                     <Label check>
-                                        <Input type="radio" name="radio1" value="option2" onChange={(e) => this.handleOnChange(e, "buttonType")} />{' '}
+                                        <Input type="radio"
+                                        name="radio1"
+                                        value="option2"
+                                        onChange={(e) => this.handleOnChange(e, "buttonType")}
+                                        checked={this.state.buttonType === 'option2'} />{' '}
                                         <FaWhatsappSquare color="green" size="2.5em" />
                                     </Label>
                                 </FormGroup>

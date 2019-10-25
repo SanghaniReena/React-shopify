@@ -1774,7 +1774,7 @@ class Configuration extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "handleOnChange", (e, key) => {
       this.setState({
         [key]: e.target.value
-      });
+      }, () => console.log("selected----", this.state.buttonType));
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "handleSubmit", () => {
@@ -1809,7 +1809,7 @@ class Configuration extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       name: "radio1",
       value: "option1",
       onChange: e => this.handleOnChange(e, "buttonType"),
-      checked: true
+      checked: this.state.buttonType === 'option1'
     }), ' ', __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__["FaWhatsapp"], {
       color: "green",
       size: "2.5em"
@@ -1821,7 +1821,8 @@ class Configuration extends react__WEBPACK_IMPORTED_MODULE_1__["Component"] {
       type: "radio",
       name: "radio1",
       value: "option2",
-      onChange: e => this.handleOnChange(e, "buttonType")
+      onChange: e => this.handleOnChange(e, "buttonType"),
+      checked: this.state.buttonType === 'option2'
     }), ' ', __jsx(react_icons_fa__WEBPACK_IMPORTED_MODULE_4__["FaWhatsappSquare"], {
       color: "green",
       size: "2.5em"
